@@ -20,6 +20,10 @@ public class Controlador {
             } else if (opcion == 2){
 
                 vista.enemigo1();
+                vista.enemigo2();
+                vista.jefe();
+                vista.guerrero();
+                vista.explorador();
 
             } else if (opcion == 3){
 
