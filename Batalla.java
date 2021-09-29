@@ -1,3 +1,8 @@
+/**
+ * Esta clase lleva las acciones que se llevan a cabo en la batalla
+ * @author: Linda Ines Jimenez Vides
+ * @version: 28 - septiembre - 2021
+ */
 
 public class Batalla{
     int nvidas;
@@ -6,6 +11,9 @@ public class Batalla{
     Enemigos enemigo1 = new Enemigos();
     Jefe jefes = new Jefe();
 
+    /**
+     * Metodo con acciones para atacar al guerrero
+     */
     public void atAguerrero(){
         while(guerrero.getVida()>0){
             nvidas = enemigo1.ataque();
@@ -14,6 +22,9 @@ public class Batalla{
         }
     }
 
+    /**
+     * Metodo con acciones para atacar al enemigo
+     */
     public void atAenemigo(){
         while(enemigo1.getVida()>0){
             nvidas = guerrero.ataque();

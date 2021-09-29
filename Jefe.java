@@ -1,11 +1,17 @@
-import java.util.Random;
+/**
+ * Esta clase es heredada de combatientes y posee las caracteristicas del jefe
+ * @author: Linda Ines Jimenez Vides
+ * @version: 28 - septiembre - 2021
+ */
 
 public class Jefe extends Combatientes {
     
-    Random rand = new Random();
-    
+    //objeto combatientes tipo jefe
     Combatientes jefe = new Combatientes();
 
+    /**
+    * metodo donde se colocan todas las caracteristicas del jefe
+    */
     public void Jefe(){
         jefe.setNombre("Jefe");
         jefe.setVida(120);
@@ -19,23 +25,4 @@ public class Jefe extends Combatientes {
         System.out.println("Habilidad especial (Agregar Vidas): "+jefe.gethabilidad1());
         System.out.println("Habilidad especial (Agregar Vidas): "+jefe.gethabilidad2());
     }
-
-    
-
-	/** 
-	@Override
-	public int atacar() {
-		//Posibilidad de recuperar vida en turno de aque
-		recuperarVida();
-		return super.atacar();
-	}
-	
-	@Override
-	public int defender() {
-		//Posibilidad de recuperar vida en turno de defensa
-		recuperarVida();
-		return super.defender();
-	}*/
-
 }
-

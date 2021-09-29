@@ -1,4 +1,8 @@
-import java.util.Random;
+/**
+ * Esta clase tiene los getters y setters de los combatientes
+ * @author: Linda Ines Jimenez Vides
+ * @version: 28 - septiembre - 2021
+ */
 
 public class Combatientes {
     
@@ -9,7 +13,6 @@ public class Combatientes {
     protected int habilidadE1;
     protected int habilidadE2;
 
-    Random rand = new Random();
 
 	public void setNombre (String nom){
 		this.nombre = nom;
@@ -60,11 +63,17 @@ public class Combatientes {
     }
 
 
+    /**
+    * Metodo para reducir las vidas en un ataque
+    */
     public int ataque(){
         int dano = vidas-poder;
         return dano;
     }
 
+    /**
+    * Metodo para dar las vidas que quedan luego del ataque
+    */
     public void dano(int vidas){
         this.vidas = vidas;
     }

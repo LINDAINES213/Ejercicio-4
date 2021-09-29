@@ -1,4 +1,8 @@
-
+/**
+ * Esta clase es el controlador del programa el cual contiene los if del menu donde invoca los metodos para el funcionamientol del programa
+ * @author: Linda Ines Jimenez Vides
+ * @version: 28 - septiembre - 2021
+ */
 
 public class Controlador {
 

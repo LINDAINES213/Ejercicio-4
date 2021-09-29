@@ -1,11 +1,18 @@
-import java.util.Random;
+/**
+ * Esta clase es heredada de combatientes y posee las caracteristicas de los enemigos
+ * @author: Linda Ines Jimenez Vides
+ * @version: 28 - septiembre - 2021
+ */
 
 public class Enemigos extends Combatientes {
 
-    Random rand = new Random();
-
+    //objeto combatientes tipo enemigo1
     Combatientes enemigo1 = new Combatientes();
 
+
+    /**
+    * metodo donde se colocan todas las caracteristicas del enemigo
+    */
     public void Enemigos(){
         enemigo1.setNombre("Enemigo");
         enemigo1.setVida(110);

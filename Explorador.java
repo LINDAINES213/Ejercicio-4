@@ -1,11 +1,17 @@
-import java.util.Random;
+/**
+ * Esta clase es heredada de combatientes y posee las caracteristicas del explorador
+ * @author: Linda Ines Jimenez Vides
+ * @version: 28 - septiembre - 2021
+ */
 
 public class Explorador extends Combatientes {
     
-    Random rand = new Random();
-
+    //objeto combatientes tipo explorador
     Combatientes explorador = new Combatientes();
 
+    /**
+    * metodo donde se colocan todas las caracteristicas del explorador
+    */
     public void Explorador(){
         explorador.setNombre("Explorador");
         explorador.setVida(100);

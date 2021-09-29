@@ -1,20 +1,27 @@
 /**
- * Esta clase es la vista del programa, donde imprime toda la informacion requerida
+ * Esta clase es la vista donde se muestran mensajes con impresiones
  * @author: Linda Ines Jimenez Vides
- * @version: 17 - septiembre - 2021
+ * @version: 28 - septiembre - 2021
  */
 
 import java.util.Scanner;
 
 public class Vista {
     
+    //Objeto tipo scanner
     Scanner sn = new Scanner(System.in);
+    //Objeto tipo enemigo
     Enemigos enemigos = new Enemigos();
+    //Objeto tipo jefe
     Jefe jefes = new Jefe();
+    //Objeto tipo guerrero
     Guerrero guerreros = new Guerrero();
+    //Objeto tipo explorador
     Explorador exploradores = new Explorador();
     
-
+    /**
+     * Texto del primer menu
+    */
     public int menu1(){
         int opcion;
 
@@ -30,6 +37,9 @@ public class Vista {
 
     }
 
+    /**
+     * Texto del tercer menu
+    */
     public int menu3(){
         int opcion3;
 
@@ -43,6 +53,9 @@ public class Vista {
 
     }
 
+    /**
+     * Texto del menu para elegir personajes
+    */
     public int personaje(){
         int opcion2;
 
@@ -56,23 +69,38 @@ public class Vista {
         return opcion2;
     }
 
+    /**
+     * Crea e imprime un enemigo
+    */
     public void enemigo1(){
         enemigos.Enemigos();
     }
 
 
+    /**
+     * Crea e imprime un jefe
+    */
     public void jefe(){
         jefes.Jefe();
     }
 
+    /**
+     * Crea e imprime un guerrero
+    */
     public void guerrero(){
         guerreros.Guerrero();
     }
 
+    /**
+     * Crea e imprime un explorador
+    */
     public void explorador(){
         exploradores.Explorador();
     }
 
+    /**
+     * Crea e imprime el mensaje de despedida
+    */
     public String salir(){
         String salir = "\nFin del Juego\n";
         System.out.println(salir);
