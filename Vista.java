@@ -30,6 +30,19 @@ public class Vista {
 
     }
 
+    public int menu3(){
+        int opcion3;
+
+        String menu3 = "1. Atacar\n" +
+                       "2. Recuperar Vida\n";
+        
+        System.out.println(menu3);
+        opcion3 =  sn.nextInt();
+               
+        return opcion3;
+
+    }
+
     public int personaje(){
         int opcion2;
 

@@ -61,8 +61,8 @@ public class Combatientes {
 
 
     public int ataque(){
-        int aleatorio = rand.nextInt(2);
-        return poder*aleatorio;
+        int dano = vidas-poder;
+        return dano;
     }
 
     public void dano(int vidas){

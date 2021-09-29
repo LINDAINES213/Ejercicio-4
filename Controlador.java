@@ -10,6 +10,7 @@ public class Controlador {
 
         int opcion = 0;
         int opcion2 = 0;
+        int opcion3 = 0;
 
         while(opcion != 3){
 
@@ -21,6 +22,15 @@ public class Controlador {
                 
                 if(opcion2 == 1){
                     vista.guerrero();
+                    vista.enemigo1();
+                    opcion3 = vista.menu3();
+
+                    if(opcion == 1){
+                        batalla.atAenemigo();
+                        opcion3 = vista.menu3();
+                        batalla.atAguerrero();
+                    }
+
                 } else if (opcion2 == 2){
                     vista.explorador();
                 }
