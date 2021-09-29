@@ -9,7 +9,10 @@ import java.util.Scanner;
 public class Vista {
     
     Scanner sn = new Scanner(System.in);
-    Enemigos enemigos;
+    Enemigos enemigos = new Enemigos();
+    Jefe jefes = new Jefe();
+    Guerrero guerreros = new Guerrero();
+    Explorador exploradores = new Explorador();
     
 
     public int menu1(){
@@ -41,38 +44,20 @@ public class Vista {
     }
 
     public void enemigo1(){
-            System.out.println("\nEnemigo 1: Loki");
-            System.out.println("Puntos de Vida: 100");
-            System.out.println("Poder de Ataque: Rayo de energía (25)");
-            System.out.println("Habilidad especial: Resistencia (+5 vida)");
+        enemigos.Enemigos();
     }
 
-    public void enemigo2(){
-        System.out.println("\nEnemigo 2: Kang");
-        System.out.println("Puntos de Vida: 100");
-        System.out.println("Poder de Ataque: Proyeccion de energia (20)");
-        System.out.println("Habilidad especial: Resistencia (+5 vida)");
-    }
 
     public void jefe(){
-        System.out.println("\nJefe: Ultron");
-        System.out.println("Puntos de Vida: 120");
-        System.out.println("Poder de Ataque: Distraccion (35)");
-        System.out.println("Habilidad especial: Teletransportacion (+40 vida)");
+        jefes.Jefe();
     }
 
     public void guerrero(){
-        System.out.println("\nGuerrero: Iron man");
-        System.out.println("Puntos de Vida: 100");
-        System.out.println("Poder de Ataque: Proyeccion de energia (20)");
-        System.out.println("Habilidad especial: Teletransportacion (+ vida)");
+        guerreros.Guerrero();
     }
 
     public void explorador(){
-        System.out.println("\nExplorador: Ant man");
-        System.out.println("Puntos de Vida: 100");
-        System.out.println("Poder de Ataque: Proyeccion de energia");
-        System.out.println("Habilidad especial: Resistencia (+vida)");
+        exploradores.Explorador();
     }
 
     public String salir(){

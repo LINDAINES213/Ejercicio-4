@@ -1,9 +1,20 @@
+import java.util.Random;
+
 public class Explorador extends Combatientes {
     
-    protected int habilidadE;
+    Random rand = new Random();
 
-    public Explorador(String nombre, int vidas, int poder, int habilidadE){
-        super(nombre, vidas, poder);
-        this.habilidadE = habilidadE;
+    Combatientes explorador = new Combatientes();
+
+    public void Explorador(){
+        explorador.setNombre("Explorador");
+        explorador.setVida(100);
+        explorador.setPoder(15);
+        explorador.setItem(5);
+
+        System.out.println("\nNombre: "+explorador.getNombre());
+        System.out.println("Vidas: "+explorador.getVida());
+        System.out.println("Poder: "+explorador.getPoder());
+        System.out.println("Item (Agregar Vidas): "+explorador.getItem());
     }
 }
